@@ -24,7 +24,7 @@ function html() {
 
 function styles() {
 	return (
-		src(cfg.srcDir + 'scss/**/*.{scss,sass,css}', { sourcemaps: true })
+		src(cfg.srcDir + 'scss/**/*.{scss,sass}', { sourcemaps: true })
 			.pipe(
 				sass({
 					outputStyle: 'expanded', // expanded/compressed
@@ -44,7 +44,7 @@ function styles() {
 
 function stylesMin() {
 	return (
-		src(cfg.srcDir + 'scss/**/*.{scss,sass,css}', { sourcemaps: false })
+		src(cfg.srcDir + 'scss/**/*.{scss,sass}', { sourcemaps: false })
 			.pipe(
 				sass({
 					outputStyle: 'compressed', // expanded/compressed

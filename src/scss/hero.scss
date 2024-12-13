@@ -1,0 +1,243 @@
+main {
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	gap: 10rem;
+}
+.container_main {
+	display: flex;
+	max-width: 144rem;
+	padding: 0 15rem;
+	position: relative;
+}
+
+.container_main::before {
+	position: absolute;
+	content: url(../imgs/briliant.png);
+	width: 59px;
+	height: 59px;
+	top: -80px;
+	left: 780px;
+	background-image: url(../imgs/briliant_bg.png);
+	background-position:center;
+	background-repeat: no-repeat;
+	padding:10px 15px;
+}
+.container_main::after {
+	position: absolute;
+	content: url(../imgs/Xd.png);
+	width: 81px;
+	height: 81px;
+    top: -30px;
+    left: 860px;
+	background-image: url(../imgs/xd_bg.svg);
+	background-position:center;
+	background-repeat: no-repeat;
+	padding:15px 21px;
+}
+
+.headline h1 {
+	font-size: 6rem;
+	font-weight: 700;
+	text-wrap: wrap;
+	width: 71.6rem;
+	height: 22rem;
+	color: #1e1f4b;
+}
+.headline h1 {
+	& strong {
+		color: #706fe5;
+		border: 8px solid #706fe5;
+		padding: 1rem;
+		position: relative;
+	}
+}
+.headline h1 strong {
+	& span {
+		display: block;
+		position: absolute;
+		width: 2.8rem;
+		height: 2.8rem;
+		border-radius: 50%;
+		border: 8px solid #706fe5;
+		background-color: white;
+
+		&:nth-child(1) {
+			top: -1.9rem;
+			left: -1.6rem;
+		}
+		&:nth-child(2) {
+			top: 9.4rem;
+			left: -1.6rem;
+		}
+		&:nth-child(3) {
+			top: 9.4rem;
+			left: 28.8rem;
+		}
+		&:nth-child(4) {
+			top: -1.9rem;
+			left: 28.8rem;
+		}
+	}
+}
+
+.headline p {
+	font-size: 2rem;
+	font-weight: 400;
+	width: 51.7rem;
+	height: 10.8rem;
+	text-wrap: wrap;
+	color: #2e3e5c;
+	margin-top: 1.5rem;
+	margin-bottom: 2.5rem;
+}
+/* ////////////////////// */
+.container_artboard {
+	width: 53.1rem;
+	height: 53.1rem;
+	position: relative;
+}
+.container_artboard::before {
+	position: absolute;
+	content: '';
+	width: 83px;
+	height: 83px;
+	background-color: #706fe5;
+	border-radius: 50%;
+	top: 390px;
+	left: 290px;
+}
+
+.container_artboard::after {
+	position: absolute;
+	content: url(../imgs/figma.svg);
+	width: 84px;
+	height: 84px;
+	top: -67px;
+	left: 320px;
+}
+.artboard_main_img {
+	width: 50rem;
+	height: 49rem;
+	position: absolute;
+	top: -110px;
+	left: -26px;
+	& img {
+		display: block;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		object-position: center;
+	}
+}
+
+.artboard_circle {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 40rem;
+	height: 40rem;
+	border-radius: 50%;
+	border: 0.8rem solid #706fe5;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: -2;
+}
+.employees_box {
+	position: absolute;
+	z-index: 10;
+	top: 300px;
+	left: 90px;
+	width: 24rem;
+	height: 13rem;
+	background-color: white;
+	border-radius: 5px;
+	border: 2px solid #e9e8fa;
+	box-shadow: 0px 6px 20px 0px #0000001a;
+	display: flex;
+	flex-direction: column;
+	padding: 13px 0;
+}
+.employees {
+	display: flex;
+	max-width: 150px;
+	margin: 0 40px;
+}
+.employees_item {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	overflow: hidden;
+	border: 2px solid #e9e8fa;
+
+	&:not(:first-child) {
+		margin-left: -2rem;
+	}
+
+	& img {
+		display: block;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		object-position: center;
+	}
+}
+.employees_box_info {
+	color: #1e1f4b;
+	font-size: 2rem;
+	font-weight: 600;
+	line-height: 1.5;
+	text-align: center;
+
+	& span {
+		font-size: 16px;
+		color: #2e3e5c;
+		opacity: 80%;
+		position: relative;
+	}
+	& span::after {
+		position: absolute;
+		content: url(../imgs/details/Star.png);
+		width: 26px;
+		height: 26px;
+		top: -1px;
+		left: -30px;
+	}
+}
+.btn_block {
+	display: flex;
+	gap: 10rem;
+}
+.btn_contact {
+	display: block;
+	background-color: #706fe5;
+	color: white;
+	width: 18rem;
+	height: 4.7rem;
+	padding: 0.6rem;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 1.2rem;
+	font-size: 1.8rem;
+	font-weight: 600;
+}
+.btn_video {
+	display: block;
+	text-align: left;
+	text-decoration: none;
+	text-wrap: wrap;
+	font-size: 1.6rem;
+	width: 14.6rem;
+	height: 4.8rem;
+	color: #2e3e5c;
+	line-height: 1.7;
+	position: relative;
+}
+.btn_video::before {
+	content: url(../imgs/video.svg);
+	position: absolute;
+	left: -6rem;
+	width: 4.8rem;
+	height: 4.8rem;
+}
