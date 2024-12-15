@@ -2,7 +2,7 @@
 	display: grid;
 	grid-template-rows: 105px 565px;
 	grid-template-columns: 1fr 1fr;
-	column-gap: 3rem;
+	column-gap: 2rem;
 	grid-template-areas:
 		'info info'
 		'base body';
@@ -38,18 +38,35 @@
 	grid-area: base;
 	width: 100%;
 	height: 56.5rem;
+	& p{
+		font-size: 1.4rem;
+		font-weight: 400;
+		line-height: 1.9;
+		text-align: left;
+		color: #2e3e5c;
+		opacity: 80%;
+		& span {
+			font-family: Poppins;
+			font-size: 1.8rem;
+			font-weight: 700;
+			line-height: 1.6;
+			text-align: left;
+			color:#1E1F4B;
+
+		}
+	}
 	& .main_digital_base {
 		width: 555px;
 		height: 448px;
-        border-radius: 30px;
-        overflow: hidden;
-        & img{
-            display: block;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            object-position: center;
-        }
+		border-radius: 30px;
+		overflow: hidden;
+		& img {
+			display: block;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			object-position: center;
+		}
 	}
 }
 .body_digital {
@@ -65,13 +82,30 @@
 .body_digital_item {
 	max-width: 26.5rem;
 	height: 29rem;
+	& p {
+		font-size: 1.4rem;
+		font-weight: 400;
+		line-height: 1.9;
+		text-align: left;
+		color: #2e3e5c;
+		opacity: 80%;
+		& span {
+			font-family: Poppins;
+			font-size: 1.8rem;
+			font-weight: 700;
+			line-height: 1.6;
+			text-align: left;
+			color:#1E1F4B;
+
+		}
+	}
 }
 
 .body_digital_img {
 	width: 26rem;
 	height: 18.8rem;
-    border-radius: 30px;
-    overflow: hidden;
+	border-radius: 30px;
+	overflow: hidden;
 
 	& img {
 		display: block;
