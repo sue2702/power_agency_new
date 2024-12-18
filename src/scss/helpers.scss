@@ -1,0 +1,26 @@
+$white-color:#eaeef3;
+$blue-accent:#706fe5;
+$dark-blue:#1E1F4B;
+$font-family:Poppins;
+$blue:#2e3e5c;
+
+@mixin max-width {
+    max-width: 144rem;
+	width: 100%;
+}
+
+@mixin img-cover{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+@mixin img-contain{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}

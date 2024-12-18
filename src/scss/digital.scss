@@ -1,3 +1,4 @@
+@use './helpers' as *;
 .container_digital_wrap {
 	display: grid;
 	grid-template-rows: 105px 565px;
@@ -23,13 +24,13 @@
 		font-weight: 700;
 		line-height: 1.2;
 		text-align: left;
-		color: #1e1f4b;
+		color: $dark-blue;
 		& span {
 			font-size: 2rem;
 			font-weight: 400;
 			line-height: 1.6;
 			text-align: left;
-			color: #2e3e5c;
+			color: $blue;
 			opacity: 80%;
 		}
 	}
@@ -38,12 +39,12 @@
 	grid-area: base;
 	width: 100%;
 	height: 56.5rem;
-	& p{
+	& p {
 		font-size: 1.4rem;
 		font-weight: 400;
 		line-height: 1.9;
 		text-align: left;
-		color: #2e3e5c;
+		color: $blue;
 		opacity: 80%;
 		& span {
 			font-family: Poppins;
@@ -51,8 +52,7 @@
 			font-weight: 700;
 			line-height: 1.6;
 			text-align: left;
-			color:#1E1F4B;
-
+			color: $dark-blue;
 		}
 	}
 	& .main_digital_base {
@@ -61,11 +61,7 @@
 		border-radius: 30px;
 		overflow: hidden;
 		& img {
-			display: block;
-			width: 100%;
-			height: 100%;
-			object-fit: cover;
-			object-position: center;
+			@include img-cover;
 		}
 	}
 }
@@ -87,7 +83,7 @@
 		font-weight: 400;
 		line-height: 1.9;
 		text-align: left;
-		color: #2e3e5c;
+		color: $blue;
 		opacity: 80%;
 		& span {
 			font-family: Poppins;
@@ -95,8 +91,7 @@
 			font-weight: 700;
 			line-height: 1.6;
 			text-align: left;
-			color:#1E1F4B;
-
+			color: $dark-blue;
 		}
 	}
 }
@@ -108,10 +103,6 @@
 	overflow: hidden;
 
 	& img {
-		display: block;
-		width: 100%;
-		height: 100%;
-		object-fit: cover;
-		object-position: center;
+		@include img-cover;
 	}
 }
