@@ -15,26 +15,26 @@ main {
 .container_main::before {
 	position: absolute;
 	content: url(../imgs/briliant.png);
-	width: 59px;
-	height: 59px;
-	top: -80px;
-	left: 780px;
+	width: 5.9rem;
+	height: 5.9rem;
+	top: -4rem;
+    left: 76.5rem;
 	background-image: url(../imgs/briliant_bg.png);
 	background-position: center;
 	background-repeat: no-repeat;
-	padding: 10px 15px;
+	padding: 1rem 1.5rem;
 }
 .container_main::after {
 	position: absolute;
 	content: url(../imgs/Xd.png);
-	width: 81px;
-	height: 81px;
-	top: -30px;
-	left: 860px;
+	width: 8.1rem;
+	height: 8.1rem;
+    top: 1.8rem;
+    left: 85rem;
 	background-image: url(../imgs/xd_bg.svg);
 	background-position: center;
 	background-repeat: no-repeat;
-	padding: 15px 21px;
+	padding: 1.5rem 2.1rem;
 }
 
 .headline h1 {
@@ -101,28 +101,28 @@ main {
 .container_artboard::before {
 	position: absolute;
 	content: '';
-	width: 83px;
-	height: 83px;
+	width: 8.4rem;
+	height: 8.4rem;
 	background-color: $blue-accent;
 	border-radius: 50%;
-	top: 390px;
-	left: 290px;
+	top: 46rem;
+	left: 27rem;
 }
 
 .container_artboard::after {
 	position: absolute;
 	content: url(../imgs/figma.svg);
-	width: 84px;
-	height: 84px;
-	top: -67px;
-	left: 320px;
+	width: 8.4rem;
+	height: 8.4rem;
+    top: 0.8rem;
+    left: 34.5rem;
 }
 .artboard_main_img {
-	width: 50rem;
-	height: 49rem;
-	position: absolute;
-	top: -110px;
-	left: -26px;
+    width: 50rem;
+    height: 58rem;
+    position: absolute;
+    top: -8.5rem;
+    left: -2.6rem;
 	& img {
 		@include img-cover;
 	}
@@ -132,20 +132,20 @@ main {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 40rem;
-	height: 40rem;
+	width: 39rem;
+	height: 39rem;
 	border-radius: 50%;
 	border: 0.8rem solid #706fe5;
 	position: absolute;
-	top: 0px;
+	top: 8.5rem;
 	left: 0px;
 	z-index: -2;
 }
 .employees_box {
 	position: absolute;
 	z-index: 10;
-	top: 300px;
-	left: 90px;
+	top: 37.5rem;
+	left: 7rem;
 	width: 24rem;
 	height: 13rem;
 	background-color: white;
@@ -154,16 +154,16 @@ main {
 	box-shadow: 0px 6px 20px 0px #0000001a;
 	display: flex;
 	flex-direction: column;
-	padding: 13px 0;
+	padding: 1.3rem 0;
 }
 .employees {
 	display: flex;
-	max-width: 150px;
-	margin: 0 40px;
+	max-width: 15rem;
+	margin: 0 4rem;
 }
 .employees_item {
-	width: 40px;
-	height: 40px;
+	width: 4rem;
+	height: 4rem;
 	border-radius: 50%;
 	overflow: hidden;
 	border: 2px solid #e9e8fa;
@@ -184,7 +184,7 @@ main {
 	text-align: center;
 
 	& span {
-		font-size: 16px;
+		font-size: 1.6rem;
 		color: $blue;
 		opacity: 80%;
 		position: relative;
@@ -192,10 +192,10 @@ main {
 	& span::after {
 		position: absolute;
 		content: url(../imgs/details/Star.png);
-		width: 26px;
-		height: 26px;
+		width: 2.6rem;
+		height: 2.6rem;
 		top: -1px;
-		left: -30px;
+		left: -3rem;
 	}
 }
 .btn_block {
