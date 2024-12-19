@@ -14,7 +14,6 @@ header {
 	z-index: 10;
 }
 .nav {
-
 }
 .nav ul {
 	display: flex;
@@ -22,13 +21,13 @@ header {
 }
 .nav_item {
 	text-decoration: none;
-	color:$dark-blue;
+	color: $dark-blue;
 	font-size: 1.6rem;
 	font-weight: 400;
 	line-height: 1.5;
 }
 .nav_item:hover {
-	color:$blue-accent;
+	color: $blue-accent;
 }
 .power {
 	width: 9.4rem;
@@ -41,8 +40,4 @@ header {
 	height: 100%;
 	object-fit: contain;
 	object-position: center;
-}
-
-@media (max-width: 998px){
-	
 }

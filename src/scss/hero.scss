@@ -18,7 +18,7 @@ main {
 	width: 5.9rem;
 	height: 5.9rem;
 	top: -4rem;
-    left: 76.5rem;
+	left: 76.5rem;
 	background-image: url(../imgs/briliant_bg.png);
 	background-position: center;
 	background-repeat: no-repeat;
@@ -29,8 +29,8 @@ main {
 	content: url(../imgs/Xd.png);
 	width: 8.1rem;
 	height: 8.1rem;
-    top: 1.8rem;
-    left: 85rem;
+	top: 1.8rem;
+	left: 85rem;
 	background-image: url(../imgs/xd_bg.svg);
 	background-position: center;
 	background-repeat: no-repeat;
@@ -114,15 +114,15 @@ main {
 	content: url(../imgs/figma.svg);
 	width: 8.4rem;
 	height: 8.4rem;
-    top: 0.8rem;
-    left: 34.5rem;
+	top: 0.8rem;
+	left: 34.5rem;
 }
 .artboard_main_img {
-    width: 50rem;
-    height: 58rem;
-    position: absolute;
-    top: -8.5rem;
-    left: -2.6rem;
+	width: 50rem;
+	height: 58rem;
+	position: absolute;
+	top: -8.5rem;
+	left: -2.6rem;
 	& img {
 		@include img-cover;
 	}
@@ -205,7 +205,7 @@ main {
 .btn_contact {
 	display: block;
 	background-color: $blue-accent;
-	color:$white-color;
+	color: $white-color;
 	width: 18rem;
 	height: 4.7rem;
 	padding: 0.6rem;
@@ -233,4 +233,15 @@ main {
 	left: -6rem;
 	width: 4.8rem;
 	height: 4.8rem;
+}
+@media (max-width: 998px) {
+	.container_main {
+		display: flex;
+		flex-direction: column;
+		gap: 5rem;
+	}
+	.container_main::after {
+		top: 8.8rem;
+		left: 76rem;
+	}
 }

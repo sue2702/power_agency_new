@@ -12,8 +12,8 @@
 	width: 100%;
 	height: 88rem;
 	padding: 0px 10rem;
-    margin-top: 4rem;
-    letter-spacing: 1.2px;
+	margin-top: 4rem;
+	letter-spacing: 1.2px;
 }
 
 .container_digital_wrap_info {
@@ -106,5 +106,13 @@
 
 	& img {
 		@include img-cover;
+	}
+}
+
+@media (max-width: 998px) {
+	.container_digital_wrap {
+		display: flex;
+		flex-direction: column;
+		gap: 10rem;
 	}
 }

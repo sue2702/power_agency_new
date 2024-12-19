@@ -6,7 +6,7 @@
 	width: 100%;
 	padding: 5rem 15rem;
 	height: 43rem;
-	background-color:$blue;
+	background-color: $blue;
 }
 .footer_top {
 	border-bottom: 1px solid #eaeef3;
@@ -80,7 +80,7 @@
 		text-wrap: nowrap;
 	}
 	& a:hover {
-		color:$blue-accent;
+		color: $blue-accent;
 	}
 }
 
@@ -93,4 +93,15 @@
 }
 .footer_rights:hover {
 	color: $blue-accent;
+}
+
+@media (max-width: 998px) {
+	.footer.power {
+		display: none;
+	}
+	.footer_nav {
+		flex-direction: column;
+		gap: 3rem;
+		align-items: self-start;
+	}
 }
