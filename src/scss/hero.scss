@@ -4,10 +4,11 @@ main {
 	display: flex;
 	flex-direction: column;
 	gap: 10rem;
+	height: auto;
 }
 .container_main {
 	display: flex;
-	max-width: 144rem;
+	max-width: 192rem;
 	padding: 0 15rem;
 	position: relative;
 }
@@ -42,7 +43,7 @@ main {
 	font-weight: 700;
 	text-wrap: wrap;
 	width: 71.6rem;
-	height: 22rem;
+	height: auto;
 	color: $dark-blue;
 }
 .headline h1 {
@@ -92,6 +93,19 @@ main {
 	margin-top: 1.5rem;
 	margin-bottom: 2.5rem;
 }
+@media (max-width: $point_3) {
+	.headline {
+		& h1 {
+			font-size: 4rem;
+			width: 37rem;
+		}
+		& p{
+			width: 37rem;
+			margin-bottom: 4.5rem;
+		}
+	}
+}
+
 /* ////////////////////// */
 .container_artboard {
 	min-width: 53.1rem;
@@ -117,6 +131,13 @@ main {
 	top: 0.8rem;
 	left: 34.5rem;
 }
+@media (max-width: $point_3) {
+	.container_artboard::after {
+		top: -70px;
+		left: 0;
+	}
+}
+
 .artboard_main_img {
 	width: 50rem;
 	height: 58rem;
@@ -125,6 +146,11 @@ main {
 	left: -2.6rem;
 	& img {
 		@include img-cover;
+	}
+}
+@media (max-width: $point_3) {
+	.artboard_main_img {
+		max-width: 38rem;
 	}
 }
 
@@ -141,6 +167,12 @@ main {
 	left: 0px;
 	z-index: -2;
 }
+@media (max-width: $point_3) {
+	.artboard_circle {
+		width: 36rem;
+		height: 36rem;
+	}
+}
 .employees_box {
 	position: absolute;
 	z-index: 10;
@@ -155,6 +187,15 @@ main {
 	display: flex;
 	flex-direction: column;
 	padding: 1.3rem 0;
+}
+
+@media (max-width: $point_3) {
+	.employees_box {
+		width: 30rem;
+		padding: 1.3rem 25px;
+		top: 38rem;
+		left: 1.5rem;
+	}
 }
 .employees {
 	display: flex;
@@ -202,6 +243,11 @@ main {
 	display: flex;
 	gap: 10rem;
 }
+@media (max-width: $point_3) {
+	.btn_block {
+		gap: 6rem;
+	}
+}
 .btn_contact {
 	display: block;
 	background-color: $blue-accent;
@@ -234,7 +280,8 @@ main {
 	width: 4.8rem;
 	height: 4.8rem;
 }
-@media (max-width: 998px) {
+
+@media (max-width: $point_2) {
 	.container_main {
 		display: flex;
 		flex-direction: column;
@@ -243,5 +290,18 @@ main {
 	.container_main::after {
 		top: 8.8rem;
 		left: 76rem;
+	}
+}
+
+@media (max-width: $point_3) {
+	.container_main {
+		padding: 0 2rem;
+		flex-direction: column-reverse;
+		&::after {
+			display: none;
+		}
+		&::before {
+			display: none;
+		}
 	}
 }

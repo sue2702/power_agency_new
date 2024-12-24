@@ -2,10 +2,10 @@
 .container_footer {
 	display: flex;
 	flex-direction: column;
-	max-width: 144rem;
+	max-width: 192rem;
 	width: 100%;
 	padding: 5rem 15rem;
-	height: 43rem;
+	min-height: 43rem;
 	background-color: $blue;
 }
 .footer_top {
@@ -69,7 +69,12 @@
 	display: flex;
 	gap: 4rem;
 }
-
+@media (max-width: $point_3) {
+	.footer_nav_list{
+		gap: 1rem;
+		flex-wrap: wrap;
+	}
+}
 .footer_nav_list_item {
 	& a {
 		color: $white-color;
@@ -95,7 +100,11 @@
 	color: $blue-accent;
 }
 
-@media (max-width: 998px) {
+
+@media (max-width: $point_2) {
+	.container_footer{
+		padding: 0;
+	}
 	.footer.power {
 		display: none;
 	}
@@ -103,5 +112,10 @@
 		flex-direction: column;
 		gap: 3rem;
 		align-items: self-start;
+	}
+}
+@media (max-width: $point_3) {
+	.container_footer{
+		padding: 0 4rem;
 	}
 }

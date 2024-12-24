@@ -1,19 +1,21 @@
 @use './helpers' as *;
 
 html {
-	// $white-color: #ffffff;
-	// $blue-accent: #706fe5;
-	// $dark-blue: #1e1f4b;
-	// $font-family: Poppins;
-
 	font-size: 10px;
 	font-family: $font-family, sans-serif;
 }
 .wrapper {
-	max-width: 144rem;
+	max-width: 192rem;
 	width: 100vw;
-	height: 100vh;
+	height: auto;
 	line-height: 1.9;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.container {
+	max-width: 192rem;
+	width: 100%;
+	height: auto;
 	margin: 0 auto;
 }
 
@@ -28,6 +30,11 @@ html {
 	}
 	@include max-width;
 	padding: 0 15rem;
+}
+@media (max-width: $point_3) {
+	.container_1 {
+		margin: auto;
+	}
 }
 
 .logo_box {
@@ -51,7 +58,8 @@ html {
 .container_2 {
 	display: flex;
 	flex-direction: column;
-	max-width: 144rem;
+	max-width: 192rem;
+	height: auto;
 	padding: 0 15rem;
 	position: relative;
 	& h1 {
@@ -62,6 +70,7 @@ html {
 		color: #03014c;
 	}
 }
+
 .container_2::before {
 	position: absolute;
 	content: url(../imgs/details/qwot.svg);
@@ -80,9 +89,34 @@ html {
 	rotate: 180deg;
 }
 
+@media (max-width: $point_3) {
+	.container_2 {
+		padding: 0;
+		margin-top: 75rem;
+
+		&::after {
+			display: none;
+		}
+		&::before {
+			display: none;
+		}
+		h1 {
+			text-align: left;
+			padding-left: 2rem;
+		}
+	}
+}
+
 .section {
 	position: relative;
 }
+
+@media (max-width: $point_3) {
+	.section {
+		margin: auto;
+	}
+}
+
 .section::before {
 	position: absolute;
 	content: url(../imgs/details/decor.svg);
@@ -116,11 +150,29 @@ html {
 	text-align: center;
 	opacity: 0.5;
 }
+@media (max-width: $point_3) {
+	.content_text {
+		max-width: 39rem;
+		text-align: left;
+		padding-left: 2rem;
+	}
+}
 
 .content_image {
 	margin: 2rem auto;
 	width: 100%;
 	height: 21rem;
+}
+@media (max-width: $point_3) {
+	.content_image {
+		margin: 0;
+		padding-left: 2rem;
+	}
+}
+@media (max-width: $point_3) {
+	.content_image {
+		max-width: 39rem;
+	}
 }
 
 .content_image_item {
@@ -170,18 +222,24 @@ html {
 /* //////////////////////////////// */
 
 .container_3 {
-	max-width: 144rem;
+	max-width: 192rem;
 	width: 100%;
-	height: 50rem;
+	height: auto;
 	padding: 0 15rem;
 	display: flex;
 }
+@media (max-width: $point_3) {
+	.container_3 {
+		padding: 0;
+	}
+}
+
 .help_content {
 	display: flex;
 	gap: 9rem;
 	max-width: 114rem;
 	width: 100%;
-	height: 39rem;
+	height: auto;
 }
 .help_box__title {
 	display: flex;
@@ -210,7 +268,7 @@ html {
 	flex-direction: column;
 	max-width: 26.5rem;
 	width: 100%;
-	height: 38rem;
+	height: auto;
 	padding: 5rem 0;
 	gap: 2rem;
 	position: relative;
@@ -230,6 +288,14 @@ html {
 		text-wrap: nowrap;
 	}
 }
+
+@media (max-width: $point_3) {
+	.help_box {
+		flex-direction: column;
+		padding: 2rem 50px;
+	}
+}
+
 .help_box::before {
 	position: absolute;
 	content: url(../imgs/details/ui-ux.svg);
@@ -256,6 +322,12 @@ html {
 	text-align: center;
 	display: flex;
 	position: relative;
+}
+@media (max-width: $point_3) {
+	.input_btn {
+		gap: 0;
+	}
+	
 }
 .input_btn::before {
 	position: absolute;
@@ -293,14 +365,22 @@ html {
 		color: white;
 	}
 }
-/* /////////////////////////responsive */
-@media (max-width: 998px) {
-	.container_2 {
-		margin-top: 50rem;
+@media (max-width: $point_3) {
+	.input_btn{
+		& a{
+			width: 13rem;
+		}
 	}
+}
+
+
+
+/* /////////////////////////responsive */
+
+@media (max-width: $point_2) {
 	.container_2::before {
 		top: 1rem;
-		left: 15rem;
+		left: 20rem;
 	}
 
 	.container_2::after {
@@ -319,6 +399,12 @@ html {
 
 		h4 {
 			margin-top: 0;
+		}
+	}
+	@media (max-width: $point_3) {
+		.help_box {
+			flex-direction: column;
+			padding-left: 2rem;
 		}
 	}
 
